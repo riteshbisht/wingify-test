@@ -3,6 +3,11 @@
 //function taking name as parameter,generating random number and concatenating the name and number
 function name_randomno($name)
 {
+//For checking if empty string is provided as name.
+if($name=="")
+{
+return "";
+}
 $number=rand(6,15);
 $name_and_no=$name.' '.$number;
 return $name_and_no;			//return final output
@@ -10,8 +15,13 @@ return $name_and_no;			//return final output
 }
 
 $name_and_no=name_randomno("ritesh");    //calling the function
+if($name_and_no=='')
+{
+echo "No Name is Provided";
+}
+else
+{
 echo $name_and_no;			//printing output
-
+}
 
 ?>
-

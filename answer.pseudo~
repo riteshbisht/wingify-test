@@ -5,7 +5,7 @@ function name_randomno($name)
 {
 $number=rand(6,15);
 $name_and_no=$name.' '.$number;
-return $name_and_no;			//return final outpur
+return $name_and_no;			//return final output
 
 }
 

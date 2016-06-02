@@ -1,0 +1,17 @@
+<?php
+
+//function taking name as parameter,generating random number and concatenating the name and number
+function name_randomno($name)
+{
+$number=rand(6,15);
+$name_and_no=$name.' '.$number;
+return $name_and_no;			//return final output
+
+}
+
+$name_and_no=name_randomno("ritesh");    //calling the function
+echo $name_and_no;			//printing output
+
+
+?>
+
